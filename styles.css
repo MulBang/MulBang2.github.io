@@ -4,51 +4,33 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: #000; /* 배경색을 검정색으로 설정 */
+  color: #fff; /* 텍스트 색상을 흰색으로 설정 */
 }
 
 .background {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #87CEEB, #ffffff);
+  background: linear-gradient(to bottom, #2c3e50, #000); /* 어두운 그라데이션 배경 */
   z-index: 1;
 }
 
-.cloud {
+.welcome {
   position: absolute;
-  background: url('cloud.png') no-repeat;
-  background-size: contain;
+  top: 20%;
+  width: 100%;
+  text-align: center;
   z-index: 2;
 }
 
-.large {
-  width: 200px;
-  height: 100px;
-  bottom: -100px;
-  left: -200px;
-  animation: moveLargeCloud 5s forwards;
+#welcome h1, #welcome p {
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-.medium {
-  width: 150px;
-  height: 75px;
-  bottom: -75px;
-  right: -150px;
-  animation: moveMediumCloud 5s forwards;
-}
-
-@keyframes moveLargeCloud {
-  to {
-    bottom: 50%;
-    left: 10%;
-  }
-}
-
-@keyframes moveMediumCloud {
-  to {
-    bottom: 30%;
-    right: 20%;
-  }
+#subGreeting {
+  font-size: 1.5em;
 }
 
 .resume {
@@ -63,6 +45,7 @@ body, html {
   z-index: 3;
   padding: 20px;
   overflow: auto;
+  color: black; /* resume 창 내부의 텍스트 색상을 검정색으로 설정 */
 }
 
 h1 {
