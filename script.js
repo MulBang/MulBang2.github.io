@@ -16,5 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Resume 창 나타나기
   setTimeout(() => {
     resume.style.display = 'block';
-  }, 1700); // 1.2초 후
+    setTimeout(() => {
+      resume.style.opacity = 1;
+    }, 100); // 0.1초 후
+  }, 2200); // 1초 후 추가 0.5초
 });
