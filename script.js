@@ -19,5 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       resume.style.opacity = 1;
     }, 100); // 0.1초 후
-  }, 2900); // 2초 후 추가 0.7초
+  }, 3200); // 2초 후 추가 0.7초
 });
