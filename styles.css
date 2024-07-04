@@ -4,15 +4,15 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #000; /* 배경색을 검정색으로 설정 */
-  color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+  background-color: #000;
+  color: #fff;
 }
 
 .background {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #2c3e50, #000); /* 어두운 그라데이션 배경 */
+  background: linear-gradient(to bottom, #87CEEB, #FFC0CB); /* 하늘색에서 연한 핑크색으로 그라데이션 */
   z-index: 1;
 }
 
@@ -35,6 +35,7 @@ body, html {
 
 .resume {
   display: none;
+  opacity: 0;
   position: absolute;
   width: 80%;
   height: 70%;
@@ -46,6 +47,7 @@ body, html {
   padding: 20px;
   overflow: auto;
   color: black; /* resume 창 내부의 텍스트 색상을 검정색으로 설정 */
+  transition: opacity 0.5s ease-in-out;
 }
 
 h1 {
