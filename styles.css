@@ -47,7 +47,7 @@ body, html {
   padding: 20px;
   overflow: auto;
   color: black; /* resume 창 내부의 텍스트 색상을 검정색으로 설정 */
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out; /* 부드럽게 나타나는 효과 */
 }
 
 h1 {
